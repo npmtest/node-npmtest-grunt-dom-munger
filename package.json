@@ -1,1 +1,40 @@
-{     "devDependencies": {         "grunt-dom-munger": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-grunt-dom-munger",     "homepage": "https://github.com/npmtest/node-npmtest-grunt-dom-munger",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-grunt-dom-munger.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for  [grunt-dom-munger (v3.4.0)](https://github.com/cgross/grunt-dom-munger)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-dom-munger.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-dom-munger) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-dom-munger.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-dom-munger)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "grunt-dom-munger": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-grunt-dom-munger",
+    "keywords": [
+        "coverage",
+        "test",
+        "grunt-dom-munger"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_grunt_dom_munger.js",
+    "name": "npmtest-grunt-dom-munger",
+    "nameAlias": "npmtest_grunt_dom_munger",
+    "nameOriginal": "npmtest-grunt-dom-munger",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-grunt-dom-munger.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
