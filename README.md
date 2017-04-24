@@ -1,8 +1,8 @@
 # npmtest-grunt-dom-munger
 
-test coverage for  [grunt-dom-munger (v3.4.0)](https://github.com/cgross/grunt-dom-munger)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-dom-munger.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-dom-munger) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-dom-munger.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-dom-munger)
+#### basic test coverage for  [grunt-dom-munger (v3.4.0)](https://github.com/cgross/grunt-dom-munger)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-dom-munger.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-dom-munger) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-dom-munger.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-dom-munger)
 
-Read and manipulate HTML with CSS selectors. Ex. read <script> tags from your html.  Remove nodes, add nodes, and more.
+#### Read and manipulate HTML with CSS selectors. Ex. read <script> tags from your html.  Remove nodes, add nodes, and more.
 
 [![NPM](https://nodei.co/npm/grunt-dom-munger.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-dom-munger)
 
@@ -10,7 +10,7 @@ Read and manipulate HTML with CSS selectors. Ex. read <script> tags from your ht
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-grunt-dom-munger/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-grunt-dom-munger/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-grunt-dom-munger/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-grunt-dom-munger/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-grunt-dom-munger/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-grunt-dom-munger/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-grunt-dom-munger/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-grunt-dom-munger/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-grunt-dom-munger/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-grunt-dom-munger/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-grunt-dom-munger/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-grunt-dom-munger/build/coverage.html/index.html)
 
@@ -92,7 +92,8 @@ Read and manipulate HTML with CSS selectors. Ex. read <script> tags from your ht
     "scripts": {
         "test": "grunt test"
     },
-    "version": "3.4.0"
+    "version": "3.4.0",
+    "bin": {}
 }
 ```
 
